@@ -1,0 +1,44 @@
+.list-social{
+list-style-type: none;
+display: flex;
+margin: 0;
+padding: 0;
+
+li {
+margin: 0;
+padding: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+a{
+text-align: center;
+    width: 50px;
+    color: white;
+}
+a:hover{
+    color: $color;
+}
+
+svg{
+    width: 30px;
+}
+svg path {
+    
+    fill: white;
+    stroke:white;
+    transition: all 0.4s linear;
+  } 
+
+
+svg:hover path {
+    fill: $color;
+    stroke:$color;
+  }
+
+}
+
+
+
+

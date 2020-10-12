@@ -1,0 +1,59 @@
+  
+    .list-of-programs {
+      padding: 20px 0;
+      list-style-type: none;
+      font-size: 22px;
+      line-height: 26px;
+    }
+  
+    .list-of-programs li:nth-child(2n-1) {
+      background: linear-gradient(90deg, #081429 54.17%, rgba(1, 25, 68, 0) 100%);
+    }
+  
+    .list-of-programs li {
+      padding: 10px;
+      display: flex;
+      align-items: center;
+    }
+  
+    .list-of-programs li p {
+      margin: 0;
+      padding: 0;
+    }
+  
+    .list-of-programs li figure {
+      padding: 0;
+      flex-shrink: 0;
+      margin: 0;
+     margin-right: 15px;
+      text-align: center;
+      height: 45px;
+      width: 45px;
+    }
+  
+    .icon-program {
+        margin: 0;
+      height: 45px;
+      width: 45px;
+      object-fit: contain;
+    }
+
+    .costums{
+        text-align: center;
+    }
+
+  .allin-price {
+margin: auto;
+      }
+  
+  
+  .allin-price td , .allin-price th{
+   padding: 20px 10px;
+   border:solid 1px $color;
+   text-align: center;
+  }
+
+.discribe-list li{
+  margin-bottom: 15px;
+}
+  
