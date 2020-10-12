@@ -1,0 +1,90 @@
+.icons-container{
+margin-top: 2px;
+}
+
+.card-icon{
+    text-align: center;
+    padding: 30px;
+.icon-image{
+    width: 120px;
+    margin: 0 auto;
+}
+.icon-description{
+    font-size: 15px;
+
+}
+}
+.card-describe-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.card-describe{
+    margin-bottom: 30px;
+border-radius: 30px;
+overflow: hidden;
+    .card-description{
+        background-color:$orange;
+        color:black;
+        padding: 20px;
+        margin: 0;
+    }
+   
+}
+
+@media screen and (min-width: 480px){
+    .card-icon{
+    
+        .icon-image{
+            width: 180px;
+        }
+        .icon-description{
+            font-size: 24px;
+        }
+        }
+
+}
+
+@media screen and (min-width: 600px){
+    .icons-container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .card-icon{
+        width: 50%;
+    }
+
+    .card-describe{
+ display: flex;
+ flex-direction: column;
+        width:calc( 50% - 20px);
+        .card-description{
+            flex-grow: 3;
+        }
+    }
+}
+
+@media screen and (min-width: 1000px){
+    .card-describe{
+        display: flex;
+        flex-direction: row;
+               width:calc( 50% - 20px);
+               .card-description{
+                   width: 50%;
+                   font-size: 19px;
+                   display: flex;
+                   justify-content: center;
+                   align-items: center;
+                   padding: 37px;
+               }
+               .card-img{
+                   width: 50%;
+               }
+           }
+}
+
+@media screen and (min-width: 1200px){
+    .card-icon{
+width: 33.33%;
+    }
+}
