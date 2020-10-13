@@ -32,6 +32,39 @@ overflow: hidden;
    
 }
 
+.card-number{
+    display: flex;
+    justify-content: center;
+    height: 240px;
+    align-items: center;
+    font-size: 15px;
+    text-align: center;
+    padding: 10px;
+    .number-color{
+        line-height: 1;
+        font-size: 220px;
+        font-weight: 900;
+        position: absolute;
+        z-index: -1;
+        opacity: 0.2;
+    }
+
+   
+}
+
+.card-number:nth-child(1) .number-color{
+    color:$green;
+}
+.card-number:nth-child(2) .number-color{
+    color:$orange;
+}
+.card-number:nth-child(3) .number-color{
+    color:$green;
+}
+.card-number:nth-child(4) .number-color{
+    color:$violet;
+}
+
 @media screen and (min-width: 480px){
     .card-icon{
     
@@ -42,7 +75,13 @@ overflow: hidden;
             font-size: 24px;
         }
         }
-
+.card-number{
+    height: 320px;
+    font-size: 19px;
+    .number-color{
+        font-size: 288px;
+    }
+}
 }
 
 @media screen and (min-width: 600px){
@@ -62,6 +101,15 @@ overflow: hidden;
             flex-grow: 3;
         }
     }
+ .card-number-container{
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-around;
+     .card-number{
+         width: 50%;
+     }
+ }
+
 }
 
 @media screen and (min-width: 1000px){
@@ -81,10 +129,19 @@ overflow: hidden;
                    width: 50%;
                }
            }
+
+        
 }
 
 @media screen and (min-width: 1200px){
     .card-icon{
 width: 33.33%;
+    }
+
+    .card-number-container{
+        
+        .card-number{
+            width: 25%;
+        }
     }
 }
