@@ -114,9 +114,9 @@
   <p class="section-description">Порадуйте его заказав необычный День Рождения в лазертаг.</p>
 
  
-  <iframe  src="https://www.youtube.com/embed/vWv1mPzpUf4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+  <iframe id="vidgame" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
+
 </section>
 
 <section class="section section-price">
@@ -171,7 +171,7 @@
 
     <div class="card-number">
       <div class="number-color">2</div>
-      <div class="card-number-description">Определиться с количеством  <br> гостей;</div>
+      <div class="card-number-description">Определиться с количеством гостей;</div>
               </div>
 
     <div class="card-number">
@@ -181,7 +181,7 @@
 
     <div class="card-number">
       <div class="number-color">4</div>
-      <div class="card-number-description">Собраться в назначенное <br> время и как следует <br> повеселиться.</div>
+      <div class="card-number-description">Собраться в назначенное время и как следует повеселиться.</div>
               </div>
 
   </div>
@@ -194,6 +194,15 @@
 
 
    </div>
+
+   
+<script>
+  window.onload = function(){
+   setTimeout(function(){
+     document.getElementById('vidgame').src = 'https://www.youtube.com/embed/vWv1mPzpUf4';
+   },1000);
+  }; 
+   </script>
 </body>
 
 </html>
