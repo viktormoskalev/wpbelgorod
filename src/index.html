@@ -5,12 +5,12 @@
   <meta charset="UTF-8">
   <title>День рождения в Galaxy Arena</title>
   <link rel="stylesheet" href="css/main.css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
-   <div class="custom-page">
+  @@include('./html-templates/header.html',{
+  })
 
      <div class="hero">
        <div class="hero-top">
@@ -104,14 +104,14 @@
 </div>
 </section> 
 
-<section class="section section-vedeo">
+<section id="video" class="section section-vedeo">
   <div class="container">
   <h2 class="section-title">
     Хотите подарить своему ребенку <br>
 незабываемые впечатления?
   </h2>
 
-  <p class="section-description">Порадуйте его заказав необычный День Рождения в лазертаг.</p>
+  <p  class="section-description ">Порадуйте его заказав необычный День Рождения в лазертаг.</p>
 
  
   <iframe id="vidgame" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -119,7 +119,7 @@
 
 </section>
 
-<section class="section section-price">
+<section id="price" class="section section-price">
   <div class="container">
   <h2 class="section-title">Специальное предложение</h2>
 <p class="section-description">Скидка при заказе до конца октября</p>
@@ -186,22 +186,17 @@
 
   </div>
 
+@@include('./html-templates/popup.html',{
+})
+
   <p class="order-text">Отпраздновать <span class="green-color">День Рождения </span>в Galaxy Arena — это отличная идея!</p>
 </div>
 </section>
 
+@@include('./html-templates/footer.html',{
+})
+<script src="js/main.js">
 
-
-
-   </div>
-
-   
-<script>
-  window.onload = function(){
-   setTimeout(function(){
-     document.getElementById('vidgame').src = 'https://www.youtube.com/embed/vWv1mPzpUf4';
-   },1000);
-  }; 
    </script>
 </body>
 
