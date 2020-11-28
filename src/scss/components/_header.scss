@@ -7,7 +7,9 @@ min-height: 90px;
 display:flex;
 justify-content: flex-start;
 align-items: center;
-
+ & .button{
+font-size: inherit;
+ }
 }
 .nav-toggle{
     z-index: 2;

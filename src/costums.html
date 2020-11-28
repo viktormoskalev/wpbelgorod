@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-6749814-6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-6749814-6');
+</script>
+  <meta charset="UTF-8">
+  <title>День рождения в Galaxy Arena</title>
+  <link rel="stylesheet" href="css/main.css">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+</head>
+
+<body>
+
+  @@include('./html-templates/header.html',{
+  })
+
+  <section class="section bgc-violet mb-20">
+    <div class="container">
+      <h1 class="section-title"> <b> выбор костюмов для аниматора <br>
+        в пакете  <span class="green-color">Всё включено</span></b> </h1>
+    </div>
+
+  </section>
+  <section class="section">
+<div class="container">
+  <div class="grid grid-l grid-border mt-20 mb-20">
+
+    @@include('./html-templates/card-costum.html',{
+      "img":"1",
+      "description":"Фиксики",
+    })
+
+    @@include('./html-templates/card-costum.html',{
+      "img":"2",
+      "description":"Миньоны",
+    })
+
+    @@include('./html-templates/card-costum.html',{
+      "img":"3",
+      "description":"Тролли",
+    })
+
+    @@include('./html-templates/card-costum.html',{
+      "img":"4",
+      "description":"Щенячий патруль",
+    })
+
+    @@include('./html-templates/card-costum.html',{
+      "img":"5",
+      "description":"Трансформер",
+    })
+
+    @@include('./html-templates/card-costum.html',{
+      "img":"6",
+      "description":"Ниндзяго",
+    })
+
+    @@include('./html-templates/card-costum.html',{
+      "img":"7",
+      "description":"Черепашки ниндзя",
+    })
+
+    @@include('./html-templates/card-costum.html',{
+      "img":"8",
+      "description":"Супермен",
+    })
+
+    @@include('./html-templates/card-costum.html',{
+      "img":"9",
+      "description":"Человек паук",
+    })
+
+    @@include('./html-templates/card-costum.html',{
+      "img":"10",
+      "description":"Железный человек",
+    })
+
+    @@include('./html-templates/card-costum.html',{
+      "img":"11",
+      "description":"Леди Баг и Супер Кот",
+    })
+
+    @@include('./html-templates/card-costum.html',{
+      "img":"12",
+      "description":"Тор",
+    })
+
+    @@include('./html-templates/card-costum.html',{
+      "img":"13",
+      "description":"Свинка Пеппа",
+    })
+
+    @@include('./html-templates/card-costum.html',{
+      "img":"14",
+      "description":"My Little Pony",
+    })
+
+    @@include('./html-templates/card-costum.html',{
+      "img":"15",
+      "description":"Холодное сердце",
+    })
+
+    @@include('./html-templates/card-costum.html',{
+      "img":"16",
+      "description":"Куклы LOL",
+    })
+
+    @@include('./html-templates/card-costum.html',{
+      "img":"17",
+      "description":"Маинкрафт",
+    })
+
+    @@include('./html-templates/card-costum.html',{
+      "img":"18",
+      "description":"Феи",
+    })
+
+    @@include('./html-templates/card-costum.html',{
+      "img":"19",
+      "description":"Пираты",
+    })
+
+    @@include('./html-templates/card-costum.html',{
+      "img":"20",
+      "description":"Микки и Минни Маус",
+    })
+
+    @@include('./html-templates/card-costum.html',{
+      "img":"21",
+      "description":"Алиса в стране чудес",
+    })
+  </div>
+  
+  
+
+</div>
+</section>
+<button class="call-button" onclick="modalopen()"><span>Заказать звонок</span> <img src="images/icons/phone.svg" alt=""></button>
+  @@include('./html-templates/small-popup.html',{
+  })
+  @@include('./html-templates/popup.html',{
+})
+@@include('./html-templates/footer.html',{
+})
+<script src="js/main.js">
+
+   </script>
+</body>
+
+</html>

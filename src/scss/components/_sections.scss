@@ -1,5 +1,5 @@
 .hero{
-
+margin-top: -2px;
     border-top:solid black 1px;
     figure{
              background-color: #000;
@@ -15,6 +15,7 @@
       color: #fff;
       font-size: 36px;
   padding: 30px 20px;
+ 
   }
 
   .hero-bottom{
@@ -29,7 +30,7 @@ background-color: $grey;
   line-height: 1.5;
 }
 
-iframe{
+.section iframe{
     width: 100%;
    height: calc(100vw / 1.6 );
   
@@ -45,6 +46,7 @@ iframe{
 }
 
 .section-description{
+    line-height: 1.5;
     font-size: 19px;
     text-align: center;
     margin-bottom: 50px;
@@ -229,9 +231,7 @@ text-align: center;
     .hero-top{
         display: flex;
        }
-       .hero-bottom{
 
-       }
 
   }
 
@@ -265,7 +265,7 @@ position: relative;
     z-index: 1;
 }
 
-iframe{
+.section iframe{
     height: 600px;
 }
   }

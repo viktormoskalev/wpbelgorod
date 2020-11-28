@@ -1,11 +1,38 @@
 <?php
-$to = "viktormoskalev07@gmail.com"; // емайл получателя данных из формы
-$tema = "Форма обратной связи на PHP"; // тема полученного емайла
-$message = "Ваше имя: ".$_POST['name']."<br>";//присвоить переменной значение, полученное из формы name=name
-  $message .= "E-mail: ".$_POST['email']."<br>"; //полученное из формы name=email
-$message .= "Номер телефона: ".$_POST['phone']."<br>"; //полученное из формы name=phone
-$message .= "Сообщение: ".$_POST['message']."<br>"; //полученное из формы name=message
-$headers  = 'MIME-Version: 1.0' . "\r\n"; // заголовок соответствует формату плюс символ перевода строки
-  $headers .= 'Content-type: text/html; charset=utf-8' . "\r\n"; // указывает на тип посылаемого контента
-mail($to, $tema, $message, $headers); //отправляет получателю на емайл значения переменных
+$to = "neonchilkk@gmail.com";
+$subject ='Заказ консультации';
+$message .= "Заказ звонка с сайта \r\n";
+$message .= "Тема: ".$_POST['desc']. "\r\n";
+$message .= "Имя: ".$_POST['name']. "\r\n";
+$message .= "Номер телефона: ".$_POST['phone']. "\r\n"; 
+$headers  = 'MIME-Version: 1.0' . "\r\n"; 
+  $headers .= 'Content-type: text/html; charset=utf-8'."\r\n"; 
+  if (mail($to,$subject,$message,"from:info@laser-centr.ru")) {
+    echo 'good';
+    echo $to,$subject,$message ;
+  } else {
+    echo 'error';
+  }
+
+
+
+
+$name = $_POST['name'];
+$phone = $_POST['phone'];
+$desc = $_POST['desc'];
+$token = "1148349678:AAGRBVbuAZ86Bj7RmR2Sre6HFdsfTlAxwwo";
+$chat_id = "-488457206";
+$arr = array(
+	'Заказ консультации' => " ",	
+    'Тема' => $desc,
+  'Имя пользователя: ' => $name,
+  'Телефон: ' => $phone,
+);
+
+foreach($arr as $key => $value) {
+  $txt .= "<b>".$key."</b> ".$value."%0A";
+};
+
+$sendToTelegram = fopen("https://api.telegram.org/bot{$token}/sendMessage?chat_id={$chat_id}&parse_mode=html&text={$txt}","r");
+
 ?>

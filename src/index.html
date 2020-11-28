@@ -1,11 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-6749814-6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-6749814-6');
+</script>
   <meta charset="UTF-8">
   <title>День рождения в Galaxy Arena</title>
   <link rel="stylesheet" href="css/main.css">
+  
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
 </head>
 
 <body>
@@ -15,7 +26,7 @@
      <div class="hero">
        <div class="hero-top">
         <figure class="width-1-2-xl">
-          <img src="images/hero.jpg" alt="kids">
+          <img src="images/lasertag.png" alt="kids">
         </figure>
         <div class="hero-title-container width-1-2-xl">
          <h1 class="hero-title">
@@ -24,7 +35,6 @@
          в лазертаг<br>
          </h1>
         </div>
-
        </div>
  <div class="hero-bottom">
    <p class="hero-description"><b>Лазертаг</b> – это отличный способ зарядить свое чадо энергией, спортивно оздоровить, и отметить день рождения  на высоком уровне! Это зрелищная, динамичная и практически спортивная игра, полюбившаяся игрокам любого возраста и пола (играют даже шестилетние дети). Именно поэтому Galaxy Arena как нельзя лучше подходит для проведения  Дня Рождения.</p>
@@ -122,7 +132,7 @@
 <section id="price" class="section section-price">
   <div class="container">
   <h2 class="section-title">Специальное предложение</h2>
-<p class="section-description">Скидка при заказе до конца октября</p>
+<p class="section-description">При заказе дня рождения 2 часа аренды столика в подарок!</p>
 <div class="price-container">
 <div class="price-item ">
   <div class="price-card">
@@ -155,7 +165,11 @@
 <p class="section-description mb-20">В стоимость входит  <b>1 час</b> игры в лазертаг <b>+ 2 часа</b> аренды праздничного стола</p>
 </div>
 <h4 class="green-color">для именинника все сеансы бесплатно. </h4>
+@@include('./html-templates/order-form.html',{
+})
 </div>
+
+
 </section>
 
 <section class="section section-order">
@@ -171,12 +185,12 @@
 
     <div class="card-number">
       <div class="number-color">2</div>
-      <div class="card-number-description">Определиться с количеством гостей;</div>
+      <div class="card-number-description">Определиться с примерным количеством гостей;</div>
               </div>
 
     <div class="card-number">
       <div class="number-color">3</div>
-      <div class="card-number-description">Позвонить по номеру<br> <b>+7 980 524 95 97</b> <br> и забронировать время;     </div>
+      <div class="card-number-description">Позвонить по номеру<br> <b><a  href="tel:+79805249597">+7(980)5249597</a></b> <br> и забронировать время;     </div>
  </div>
 
     <div class="card-number">
@@ -191,10 +205,24 @@
 
   <p class="order-text">Отпраздновать <span class="green-color">День Рождения </span>в Galaxy Arena — это отличная идея!</p>
 </div>
+
 </section>
+
+ <button class="call-button" onclick="modalopen()"><span>Заказать звонок</span> <img src="images/icons/phone.svg" alt=""></button>
+
+
+
+
+</style>
 
 @@include('./html-templates/footer.html',{
 })
+<script>
+  window.onload = function(){
+      setTimeout(function(){
+        document.getElementById('vidgame').src = 'https://www.youtube.com/embed/vWv1mPzpUf4';
+      },300);
+  }; </script>
 <script src="js/main.js">
 
    </script>

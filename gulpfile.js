@@ -132,7 +132,7 @@ gulp.task('image:build', async function() {
           }),
           //jpg very light lossy, use vs jpegtran
           imageminMozjpeg({
-              quality: 40
+              quality: 90
           })
       ])))
       .pipe(gulp.dest(path.build.img)); //И бросим в build
