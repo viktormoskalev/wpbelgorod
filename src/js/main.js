@@ -68,7 +68,7 @@ function modalopen(){
 
 
 //захват пользователя
-setTimeout(modalopen,40000);
+// setTimeout(modalopen,40000);
 
 //popup2
 

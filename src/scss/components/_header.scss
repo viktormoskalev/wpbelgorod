@@ -20,10 +20,11 @@ font-size: inherit;
     height: auto;
     transition: 0.3s;
     font-size: 26px;
-    line-height: 2;
+    // line-height: 2;
    color: white;
    transform: translate(0);
    opacity: 1;
+
 
 }
 
@@ -48,6 +49,7 @@ font-size: inherit;
     display: block;
     color:inherit;
     text-decoration:none;
+
 }
 
 .nav-open .nav-toggle{
